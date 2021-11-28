@@ -4,9 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author"
-    content=" C&R Landscape and Design is a drought resistant and drought tolerant landscape company specializing in xeriscape and hardscape design and installation" />
+  <meta name="description" content="C&R Landscape and Design is a drought resistant and drought tolerant landscape company specializing in xeriscape and hardscape design and installation" />
+
   <title>C&R Landscape Drought Resistant and Drought Tolerant Designs</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <!-- Font Awesome icons (free version)-->
@@ -33,10 +32,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#benefits">Benefits</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-          <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+            <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+                data-bs-target="#infoModal">
+                <span class="d-flex align-items-center">
+                    <i class="bi-chat-text-fill me-2"></i>
+                    <span class="small">Request Info</span>
+                </span>
+            </button>
         </ul>
       </div>
     </div>
@@ -47,15 +52,14 @@
       <div class="d-flex justify-content-center">
         <div class="text-center">
           <h1 class="mx-auto my-0 text-uppercase">C & R Landscape</h1>
-          <h2 class="text-white-50 mx-auto mt-2 mb-5">Drought tolerant design + build to improve your outdoor space for
-            better living</h2>
-          <a class="btn btn-primary" href="#about">Get Started</a>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">C&R Landscape is a drought resistant and drought tolerant landscape company specializing in native plant and hardscape design and installation.</h2>
+          <a class="btn btn-primary" href="#benefits">Learn More</a>
         </div>
       </div>
     </div>
   </header>
   <!-- About-->
-  <section class="about-section text-center" id="about">
+  <section class="about-section text-center" id="benefits">
     <div class="container px-4 px-lg-5">
       <section id="synopsis" class="pt-5 pb-0 my-0">
         <div class="container">
@@ -133,7 +137,7 @@
     </div>
   </section>
   <!-- Projects-->
-  <section class="projects-section bg-light" id="projects">
+  <section class="projects-section bg-light" id="services">
     <div class="container px-4 px-lg-5">
       <!-- Featured Project Row-->
       <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
@@ -142,8 +146,8 @@
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
-            <h4>C&R Landscape Design</h4>
-            <p class="text-black-50 mb-0">Located in Los Angeles, our design services can help you modernize your
+            <h4>Services</h4>
+            <p class="text-black-50 mb-0">Our design services can help you modernize your
               outdoor space and reduce your water usage. Whether you want to replace your lawn with California native
               landscaping or hardscape, we can help you design & install your project. </p>
           </div>
@@ -152,7 +156,7 @@
       <!-- Project One Row-->
       <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
         <div class="col-lg-6"><img class="img-fluid" src="assets/img/landscape.jpg"
-            alt="Home with drought resistant and drought tolerant front yard landscaping" /></div>
+            alt="Home with drought resistant and drought tolerant front yard landscaping. Xeriscape. Native plants." /></div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
@@ -311,6 +315,41 @@
       </div>
     </div>
   </section>
+  <!-- Feedback Modal-->
+<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-gradient-primary-to-secondary p-4">
+                <h5 class="modal-title font-alt text-white" id="infoModalLabel">Request Info</h5>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body border-0 p-4">
+                <form>
+                    <div class="form-group mb-4">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                  <div class="form-group mb-4">
+                        <label for="phone" class="form-label">Phone number:</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="(213) 555-1234">
+                    </div>                                       
+                    <div class="form-group mb-4">
+                        <label for="email" class="form-label">Email address:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="comment" class="form-label">Request Info:</label>
+                        <textarea class="form-control" id="comment" placeholder="Please tell me more about:" rows="3"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary rounded-pill btn-lg w-100" id="submitButton" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
   <!-- Footer-->
   <footer class="footer bg-black small text-center text-white-50">
     <div class="container px-4 px-lg-5">Copyright &copy; Your Website 2021</div>
