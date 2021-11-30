@@ -11,6 +11,8 @@ const b = document.getElementById('apartment');
 const c = document.getElementById('public');
 let price = 0;
 let estimate = 0;
+const d = document.getElementById('typeofHouse');
+const e = document.getElementById('formestimate');
 function houseButton(){
 
     a.style.borderWidth = "0.5vw";
@@ -18,6 +20,7 @@ function houseButton(){
     b.style.borderWidth = "0vw";
     c.style.borderWidth = "0vw";
     price = 0;
+    d.value = "house";
     event.preventDefault();
 
 }
@@ -27,6 +30,7 @@ function buildingButton(){
     a.style.borderWidth = "0vw";
     c.style.borderWidth = "0vw";
     price = 1;
+    d.value = "apartment";
     event.preventDefault();
 }
 function publicButton(){
@@ -35,8 +39,11 @@ function publicButton(){
     a.style.borderWidth = "0vw";
     b.style.borderWidth = "0vw";
     price = 2;
+    d.value = "public space";
+
     event.preventDefault();
 }
+
 
 function calculate(){
     const length = document.getElementById('length').value;
@@ -49,6 +56,7 @@ function calculate(){
     console.log("estimate price: " + estimate);
     const est = document.getElementById('estimate')
     est.textContent = ("Estimate price: $" + estimate.toFixed(2));
+    e.value = ("Estimate price: $" + estimate.toFixed(2));
     event.preventDefault();
 }
 
